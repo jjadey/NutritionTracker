@@ -28,7 +28,7 @@ class NutritionGUI:
         self.root.config(menu=menubar)
         filemenu = tk.Menu(menubar, tearoff=0)
         menubar.add_cascade(label="File", menu=filemenu)
-        filemenu.add_command(label="Exit", command=exit)
+        filemenu.add_command(label="Exit", command=self.exit)
         navmenu = tk.Menu(menubar, tearoff=0)
         menubar.add_cascade(label="Navigate", menu=navmenu)
         navmenu.add_command(label="Settings", command=lambda: self.show_page(0))
