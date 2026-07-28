@@ -86,6 +86,8 @@ The solution I settled on, was to allow users to provide additional context alon
 ![d4](assets/d4.png)
 *After Prompt Engineering*
 
+To quantify the overall improvement, mean absolute error (MAE) was calculated across all 120 nutritional estimates (10 generations × 3 meals × 4 nutritional attributes). The introduction of contextual information reduced overall MAE from 136.34 to 48.42, representing a 64% reduction in MAE.
+
 ### UI
 This involved a decision between creating a GUI using a package such as Tkinter or creating a web application using a package such as Flask. Considering the sensitive nature of user data and API keys, I opted for Tkinter so that the application runs locally on each user's machine.
 
